@@ -1,0 +1,27 @@
+GET http://localhost:3000/players
+
+###
+
+GET http://localhost:3000/players/15
+
+###
+POST http://localhost:3000/players
+Content-Type: application/json
+
+{
+    "name": "Leo Messi",
+    "club": "fc barcelona"
+}
+
+###
+DELETE http://localhost:3000/players/60eafed610a5ad14404eac5f
+
+###
+
+PATCH http://localhost:3000/players/60eed5d1f608bc55f01f09ba
+Content-Type: application/json
+
+{
+    "name":"Bruno",
+    "club":"Manchester United"
+}
